@@ -1,0 +1,42 @@
+
+.tableContainer {
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+  
+
+    .transactionHistory thead {
+        background-color: rgb(55, 215, 243);
+        color: white;
+        
+
+            tr {
+                padding: 10px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 14px;
+                
+                th {
+                    padding: 10px 100px;
+                }
+            }
+
+    }
+}
+  
+.tbodyContainer {
+    margin-top: 20px;
+    td {
+        padding: 10px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.evenRow {
+    background-color:  #ffffff; 
+  }
+  
+  .oddRow {
+    background-color:  #edf4f7; 
+  }

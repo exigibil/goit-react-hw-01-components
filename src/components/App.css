@@ -1,0 +1,40 @@
+
+
+.texttitle {
+    height: '100vh';
+   display: 'flex';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #010101;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+  .profile-container {
+  display: flex;
+  flex-direction: row;
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .text-title {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(241, 81, 81) , rgb(220, 255, 66));
+  }
+
+}
+
+  }

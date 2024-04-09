@@ -1,0 +1,46 @@
+.friendlist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;   
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 20px;
+    box-shadow: #666666 0px 2px 3px;
+    padding: 20px 100px 20px 70px;
+    justify-content: flex-start;
+  
+   
+
+    img {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      
+      }
+      
+      .bullet.online {
+        background-color: green;
+      }
+      
+      .bullet.offline {
+        background-color: red;
+      }
+
+      .name {
+        font-size: 25px;
+        font-weight: bold;
+      }
+  }
+  
+  
+  
