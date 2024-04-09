@@ -2,11 +2,9 @@ import React from 'react';
 import styles from './Statistics.module.css';
 import data from '../data/data.json';
 import clsx from 'clsx';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-
-function Statistics({ids}) {
-
+function Statistics({ ids }) {
   const filteredData = data.filter(item => ids.includes(item.id));
 
   return (
@@ -24,11 +22,8 @@ function Statistics({ids}) {
   );
 }
 
-
-
 Statistics.propTypes = {
   ids: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
-
 
 export default Statistics;

@@ -30,33 +30,39 @@ export const App = () => {
       <Alert variant="error">{text}</Alert>
 </div> */}
 
-<div className='container'>
-<div className='profile-container'>
-  <div className='profile'> 
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+      <div className="container">
+        <div className="profile-container">
+          <div className="profile">
+            <Profile
+              username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}
+            />
 
-      <Statistics ids={ids} />
-  </div>
+            <Statistics ids={ids} />
+          </div>
 
-  <div>
-    <h2 className='text-title'>Friend List</h2>
-    <FriendList friends={friendsData} />
-  </div>
-</div>
-<div>
-      <button type="button" onClick={() => setShowTransactionHistory(!showTransactionHistory)}>
-        {showTransactionHistory ? 'Hide Transaction History' : 'Show Transaction History'}
-      </button>
-      {showTransactionHistory && <TransactionHistory items={transactionsData} />}
-    </div>
-
-</div>
-</>
+          <div>
+            <h2 className="text-title">Friend List</h2>
+            <FriendList friends={friendsData} />
+          </div>
+        </div>
+        <div>
+          <button
+            type="button"
+            onClick={() => setShowTransactionHistory(!showTransactionHistory)}
+          >
+            {showTransactionHistory
+              ? 'Hide Transaction History'
+              : 'Show Transaction History'}
+          </button>
+          {showTransactionHistory && (
+            <TransactionHistory items={transactionsData} />
+          )}
+        </div>
+      </div>
+    </>
   );
 };

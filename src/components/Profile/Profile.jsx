@@ -1,18 +1,14 @@
 import styles from './Profile.module.css';
 import clsx from 'clsx';
 import data from '../data/user.json';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 function Profile({ username, tag, location, avatar, stats }) {
   console.log(data);
   return (
     <div className={clsx(styles.profile)}>
       <div className={clsx(styles.description)}>
-        <img
-          src={avatar}
-          alt="User avatar"
-          class="avatar"
-        />
+        <img src={avatar} alt="User avatar" class="avatar" />
         <h2 className={clsx(styles.name)}>{username}</h2>
         <p className={clsx(styles.tag)}>@{tag}</p>
         <p className={clsx(styles.location)}>{location}</p>
