@@ -49,6 +49,10 @@
     }
 }
 
+ul {
+  display: flex;
+  flex-direction: row;
+}
 
 .statistics .statlist .item:nth-child(5n+1) {
     background-color: #50C4F5;
