@@ -52,6 +52,12 @@
 ul {
   display: flex;
   flex-direction: row;
+
+  li {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 .statistics .statlist .item:nth-child(5n+1) {
